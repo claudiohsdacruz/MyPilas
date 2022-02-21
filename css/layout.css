@@ -1,0 +1,23 @@
+/* Vamos colocar os blocos relacionados ao layout. */
+
+.layout-cabecalho {
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+
+.layout-cabecalho img {
+	margin-top: 12px;
+}
+
+.layout-planos {
+	padding: 80px 0;
+}
+/* Depois que criamos o sistema de grid do bootstrap 
+esse código se tornou obsoleto */
+/*
+#planos::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+*/
