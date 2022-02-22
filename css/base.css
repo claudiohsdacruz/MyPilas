@@ -1,17 +1,11 @@
-/* Nós geralmente organizamos a formatação de cada grupo de código 
-	por categoria, dando um espaço entre elas. */
+/* Definindo o tamanho da fonte padrão como o do navegador */
+html {
+	font-size: 62.5%;/* tamanho padrão 10px */
+}
 
 body {
-	/* Posicionamento */
-
-	/* Display e box-model */
 	margin: 0;
 
-	/* Cores */
-
-	/* Texto */
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-
-	/* Outros */
+	font-size: 1.4rem;
 }
