@@ -2,11 +2,29 @@
 	PLANO
 \*---------------*/
 .plano {
+	position: relative; /*para referenciar o pseudo elemento MAIS POPULAR ao plano */
+	
 	padding: 10px;
 	border: 1px solid #95a4a5;
-	/* Definindo o padrão de fonte do plano com base na fonte padrão
-	do navegador. */
+
 	font-size: 1.4rem;/* vai ser calculado em 14px*/
+}
+
+/* Adcionando pseudo-elemento MAIS POPULAR */
+.plano--mais-popular::after {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+
+	padding: 0 10px;
+
+	background-color: #c20303;
+	color: #fff;
+
+	font-size: 0.7142em;/* 10px */
+	line-height: 2.5;
+
+	content: "MAIS POPULAR";
 }
 
 .plano__cabecalho {
