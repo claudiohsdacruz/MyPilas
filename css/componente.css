@@ -235,30 +235,50 @@
   MENU
 \*---------------*/
 
+/* ajustando o menu para telas pequenas */
 .menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-
-	width: 200px;
 	margin: 0;
-	border-right: 1px solid #eee;
-	padding: 20px;
 
 	font-size: 1.4rem;
-
-	background-color: #fbfbfb;
 
 	list-style: none;
 }
 
-.menu__item {
-	display: block;
+@media(max-width : 991px) {
 
-	line-height: 3; /* três vezes o tamanho definido para fonte */
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+
+		width: 200px;
+		border-right: 1px solid #eee;
+		padding: 20px;
+
+		background-color: #fbfbfb;
 }
 
-.menu__item--botao {
-	margin-top: 20px;
+	.menu__item {
+		display: block;
+
+		line-height: 3; /* três vezes o tamanho definido para fonte */
+	}
+
+	.menu__item--botao {
+		margin-top: 20px;
+	}
+}
+
+/* ajustando o menu para telas grandes */
+@media(min-width : 992px) {
+
+	.menu__item {
+		display: inline-block;
+		padding-right: 20px;
+	}
+
+	.menu__item:last-of-type {
+		padding-right: 0px;
+	}
 }
