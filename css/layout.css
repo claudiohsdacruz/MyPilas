@@ -5,14 +5,13 @@
 	background-color: #fff;
 }
 
-/* componente para fixação do cabeçalho */
 .layout-cabecalho--home {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 
-	z-index: 1; 
+	z-index: 1; /* Posiciona a frente o elemento com maior número associado a propriedade "z-index"*/
 }
 
 .layout-cabecalho img {
@@ -24,7 +23,7 @@
 }
 
 .layout-chamada {
-	margin-top: 60px; 
+	margin-top: 60px; /* corrigindo o posicionamento depois da inclusão do cabeçalho fixo */
 	padding: 80px 0;
 
 	background-color: #7ab55c;
@@ -43,4 +42,13 @@
 	color: #fff;
 
 	text-align: center;
+}
+
+
+@media(max-width:  749px) {
+	/* aplica a formatação en todos os elementos menos aquele identificado
+	 com a classe .ultima-coluna */
+	.layout-planos .row > div:not(.ultima-coluna) {
+		margin-bottom: 40px;
+	}
 }
