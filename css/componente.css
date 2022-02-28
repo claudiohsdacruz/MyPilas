@@ -72,7 +72,8 @@
 
 	background-color: #bbb;
 	color: #fff;
-	
+
+	line-height: normal;
 	font-size: 1em;
 	text-decoration: none;
 }
@@ -84,11 +85,12 @@
 	text-decoration: none;
 }
 
-.botao--assinar {
+.botao--assinar, .botao--login {
 	background-color: #127d00;
 }
 
-.botao--assinar:hover, botao--assinar:focus {
+.botao--assinar:hover, .botao--assinar:focus,
+.botao--login:hover, .botao--login:focus{
 	background-color: #0e6400;
 }
 
@@ -227,4 +229,36 @@
 	.botao-chaveador {
 		display: none;
 	}
+}
+
+/*---------------*\
+  MENU
+\*---------------*/
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+	width: 200px;
+	margin: 0;
+	border-right: 1px solid #eee;
+	padding: 20px;
+
+	font-size: 1.4rem;
+
+	background-color: #fbfbfb;
+
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+
+	line-height: 3; /* três vezes o tamanho definido para fonte */
+}
+
+.menu__item--botao {
+	margin-top: 20px;
 }
