@@ -158,6 +158,8 @@
 }
 
 .depoimento > blockquote {
+	position: relative;
+
 	margin: 0;
 	padding: 0 60px;
 
@@ -165,6 +167,19 @@
 	font-size: 1em;
 }
 
+.depoimento > blockquote::before {
+	position: absolute;
+	left: 0;
+	top: -0.35em;/* Neste caso o tamanho é em relação ao elemento - 176px */
+
+	color: #ccc;
+
+	font-size: 8em; /* 176px */
+
+	/* Inserindo um caracter a partir do código unicode.
+		adicionamos barra e o código do caractere. */
+	content: "\201C";
+}
 .depoimento__autor {
 	margin-top: 40px;
 
