@@ -1,5 +1,6 @@
 .layout-cabecalho {
 	height: 60px;
+	line-height: 60px; /* como a altura da linha será a mesma da altura do cabeçalho os elementos ficarão centralizados */ 
 	border-bottom: 1px solid #ccc;
 
 	background-color: #fff;
@@ -12,10 +13,6 @@
 	right: 0;
 
 	z-index: 1; /* Posiciona a frente o elemento com maior número associado a propriedade "z-index"*/
-}
-
-.layout-cabecalho img {
-	margin-top: 12px;
 }
 
 .layout-planos {
