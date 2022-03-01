@@ -252,12 +252,17 @@
 		left: 0;
 		bottom: 0;
 
+		display: none;
 		width: 200px;
 		border-right: 1px solid #eee;
 		padding: 20px;
 
 		background-color: #fbfbfb;
-}
+	}
+
+	.menu--exibindo {
+		display: block;
+	}
 
 	.menu__item {
 		display: block;
