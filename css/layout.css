@@ -36,8 +36,8 @@
 	padding: 40px 0;
 
 	background-color: #484848;
-	color: #fff;
 
+	color: #fff;
 	text-align: center;
 }
 
@@ -48,4 +48,8 @@
 	.layout-planos .row > div:not(.ultima-coluna) {
 		margin-bottom: 40px;
 	}
+}
+
+.layout-assinatura {
+	padding: 40px 0;
 }
